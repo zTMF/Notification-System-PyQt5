@@ -1,0 +1,59 @@
+/* Estilos gerais da aplicação */
+QMainWindow {
+    background-color: #f0f0f0;
+}
+
+/* Estilo para o botão principal */
+QPushButton#mainButton {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+QPushButton#mainButton:hover {
+    background-color: #2980b9;
+}
+
+QPushButton#mainButton:pressed {
+    background-color: #1c5c8a;
+}
+
+QLabel#mainLabel {
+    color: #fff;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+QComboBox {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+
+QComboBox:editable {
+    background: white;
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+    background: #E3E3E3;
+}
+
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: #D5D5D5;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
