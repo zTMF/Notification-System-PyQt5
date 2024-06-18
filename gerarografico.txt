@@ -1,0 +1,5 @@
+colocar todas as classes dentro de um arquivo
+tirar __ do começo das variaceis e metodos
+
+comando:
+    pyreverse -o png -p TMP .\main.py
