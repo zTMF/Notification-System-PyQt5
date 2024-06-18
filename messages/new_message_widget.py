@@ -44,7 +44,7 @@ class MessageWidget(QWidget, FORM_CLASS):
 
         self.__pos_anim = QPropertyAnimation(self, b'pos')
         self.__pos_anim.stateChanged.connect(self.__state_move_change)
-        self.__pos_anim.setDuration(int(self.__anim_duration * 1000))
+        
 
         self.__pos_anim_close: QPropertyAnimation = QPropertyAnimation(self, b'pos')
         self.progress_animation = QPropertyAnimation(self.progressBar, b"value")
@@ -154,6 +154,7 @@ class MessageWidget(QWidget, FORM_CLASS):
 
     def animation_in(self, index: int = 0, offset: int = 50, direction: str = 'forward') -> None:
         self.last_pos = self.pos()
+        self.__pos_anim.setDuration(int(self.__anim_duration * 1000))
         self.__pos_anim.setEasingCurve(QEasingCurve(self.enter_animation))
         if direction == 'forward':
             self.__pos_anim.setStartValue(self.pos())
