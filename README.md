@@ -70,4 +70,4 @@ message_manager.add(current)
 ```
 
 ## UML
-![Logo](./images/classes_TMP.png)
+![Logo](./images/classes_UML.png)
