@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QWidget
 
-from messages.new_message_widget import MessageWidget
+from messages.message_widget import MessageWidget
 from messages.utils import MessageType
 
 
